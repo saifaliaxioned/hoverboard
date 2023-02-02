@@ -133,11 +133,11 @@ li {
   width: 19px;
   height: 19px;
   background-color: #1D1D1D;
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 
 .box:hover {
-  transition: all .1s ease;
+  transition: all 0s ease;
   box-shadow: 0 0 10px #fff;
 }
 
