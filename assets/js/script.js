@@ -1,5 +1,5 @@
 const ul = document.querySelector('.box-items'),
-  letters = '0123456789ABCDEF',
+  colorLetters = '0123456789ABCDEF',
   boxLength = 400;
   
 for (let i = 0; i < boxLength; i++) {
@@ -21,7 +21,7 @@ box.forEach(el => {
 const colorGenerator = ()=> {
   let color = '#';
   for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * letters.length)];
+    color += colorLetters[Math.floor(Math.random() * colorLetters.length)];
   }
   return color;
 }
