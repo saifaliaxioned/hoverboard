@@ -1,5 +1,5 @@
 const ul = document.querySelector('.box-items'),
-  arr = ['#9FD406', '#555D7B', '#C97D99', '#ff0000', '#79CAE5', '#ff6a00'],
+  letters = '0123456789ABCDEF',
   boxLength = 400;
   
 for (let i = 0; i < boxLength; i++) {
@@ -11,15 +11,20 @@ for (let i = 0; i < boxLength; i++) {
 const box = document.querySelectorAll('.box');
 box.forEach(el => {
   el.addEventListener('mouseover',()=> {
-    // let randomColor = Math.ceil(Math.random() * arr.length);
-    let randomColor = Math.floor(Math.random() * arr.length);
-    el.style.background = arr[randomColor];
+    el.style.background = colorGenerator();
   });
   el.addEventListener('mouseout',()=> {
       el.style.background = '';
   });
 });
 
+const colorGenerator = ()=> {
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * letters.length)];
+  }
+  return color;
+}
 
 
 
