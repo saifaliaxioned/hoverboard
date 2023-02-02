@@ -1,5 +1,5 @@
 const ul = document.querySelector('.box-items'),
-  colorLetters = '0123456789ABCDEF',
+  colorLetters = '0123456789ABCDEFabcdef',
   boxLength = 400;
   
 for (let i = 0; i < boxLength; i++) {
