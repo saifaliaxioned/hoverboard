@@ -10,7 +10,6 @@ for (let i = 0; i < boxLength; i++) {
 const box = document.querySelectorAll('.box');
 box.forEach(el => {
   el.addEventListener('mouseover',()=> {
-    console.log(`#${(Math.random()).toString(16).substr(-6)}`);
     el.style.background = `#${(Math.random()).toString(16).substr(-6)}`;
   });
   el.addEventListener('mouseout',()=> {
